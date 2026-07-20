@@ -1,5 +1,4 @@
 # F&O Design — Decap CMS Configuration
-# Docs: https://decapcms.org/docs/configuration-options/
 
 backend:
   name: github
@@ -30,10 +29,100 @@ collections:
     summary: "{{name}} — {{tag}}"
     sortable_fields: ["name", "date"]
     fields:
-      - { label: "ID", name: "id", widget: "string", hint: "unikalny identyfikator, np. feniks-apartments. Bez spacji." }
+      - { label: "ID", name: "id", widget: "string", hint: "unikalny identyfikator, np. feniks-apartments" }
       - { label: "Nazwa projektu", name: "name", widget: "string" }
-      - { label: "Kategoria", name: "tag", widget: "string", hint: "np. Apartamenty, Restauracja, Beauty" }
+      - { label: "Kategoria", name: "tag", widget: "string", hint: "np. Apartamenty, Restauracja" }
       - { label: "Opis", name: "desc", widget: "text" }
-      - { label: "URL projektu", name: "url", widget: "string", required: false, hint: "np. https://... (opcjonalnie)" }
-      - { label: "Zdjęcie główne (URL)", name: "image", widget: "image", hint: "URL zdjęcia pokazującego projekt" }
-      - { label: "Data", name: "date", widget: "datetime", default: "", required: false }
+      - { label: "URL projektu", name: "url", widget: "string", required: false }
+      - { label: "Zdjęcie (URL)", name: "image", widget: "image" }
+      - { label: "Data", name: "date", widget: "datetime", required: false }
+
+  - name: "services"
+    label: "🧩 Usługi"
+    label_singular: "Usługa"
+    files:
+      - name: "services"
+        label: "Pakiety usług"
+        file: "data/services.json"
+        format: "json"
+        fields:
+          - label: "Lista usług"
+            name: "services"
+            widget: "list"
+            summary: "{{fields.name}} — {{fields.price}}"
+            fields:
+              - { label: "ID", name: "id", widget: "string" }
+              - { label: "Ikona (emoji)", name: "icon", widget: "string" }
+              - { label: "Nazwa", name: "name", widget: "string" }
+              - { label: "Opis", name: "desc", widget: "text" }
+              - { label: "Cechy", name: "features", widget: "list", field: { label: "Cecha", name: "feature", widget: "string" } }
+              - { label: "Cena", name: "price", widget: "string", hint: "np. od 1 999 zł" }
+              - { label: "Dopisek ceny", name: "priceSub", widget: "string" }
+              - { label: "Notka", name: "priceNote", widget: "string" }
+              - { label: "Wyróżniony?", name: "featured", widget: "boolean", default: false }
+
+  - name: "faq"
+    label: "❓ FAQ"
+    label_singular: "Pytanie"
+    files:
+      - name: "faq"
+        label: "Pytania i odpowiedzi"
+        file: "data/faq.json"
+        format: "json"
+        fields:
+          - label: "Lista pytań"
+            name: "faq"
+            widget: "list"
+            summary: "{{fields.question}}"
+            fields:
+              - { label: "Pytanie", name: "question", widget: "string" }
+              - { label: "Odpowiedź", name: "answer", widget: "text" }
+
+  - name: "settings"
+    label: "⚙️ Ustawienia strony"
+    files:
+      - name: "settings"
+        label: "Hero, statystyki, proces, kontakt"
+        file: "data/settings.json"
+        format: "json"
+        fields:
+          - label: "Hero — napisy w typewriter"
+            name: "hero"
+            widget: "object"
+            fields:
+              - { label: "Badge", name: "badge", widget: "string" }
+              - label: "Lista haseł (typewriter)"
+                name: "typewriterPhrases"
+                widget: "list"
+                field: { label: "Hasło", name: "phrase", widget: "string" }
+          - label: "Statystyki (hero)"
+            name: "stats"
+            widget: "list"
+            summary: "{{fields.number}}{{fields.suffix}} — {{fields.label}}"
+            fields:
+              - { label: "Liczba", name: "number", widget: "number", value_type: "int" }
+              - { label: "Sufiks", name: "suffix", widget: "string", hint: "np. +, %, /7" }
+              - { label: "Etykieta", name: "label", widget: "string" }
+          - label: "Proces (4 kroki)"
+            name: "process"
+            widget: "list"
+            summary: "{{fields.title}}"
+            fields:
+              - { label: "Tytuł", name: "title", widget: "string" }
+              - { label: "Opis", name: "desc", widget: "text" }
+          - label: "Dlaczego my (6 powodów)"
+            name: "whyUs"
+            widget: "list"
+            summary: "{{fields.title}}"
+            fields:
+              - { label: "Ikona (emoji)", name: "icon", widget: "string" }
+              - { label: "Tytuł", name: "title", widget: "string" }
+              - { label: "Opis", name: "desc", widget: "text" }
+          - label: "Dane kontaktowe"
+            name: "contact"
+            widget: "object"
+            fields:
+              - { label: "Email", name: "email", widget: "string" }
+              - { label: "Telefon", name: "phone", widget: "string" }
+              - { label: "Lokalizacja", name: "location", widget: "string" }
+              - { label: "Czas odpowiedzi", name: "responseTime", widget: "string" }

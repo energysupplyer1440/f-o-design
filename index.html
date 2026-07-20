@@ -1174,11 +1174,7 @@
             <a href="#kontakt" class="btn-primary">Umów bezpłatną konsultację →</a>
             <a href="#portfolio" class="btn-secondary">Zobacz realizacje</a>
         </div>
-        <div class="hero-stats">
-            <div class="stat-item reveal"><div class="num"><span class="counter" data-target="3">0</span><span class="suffix">+</span></div><div class="label">Zrealizowanych stron</div></div>
-            <div class="stat-item reveal reveal-delay-1"><div class="num"><span class="counter" data-target="100">0</span><span class="suffix">%</span></div><div class="label">Oddanych w terminie</div></div>
-            <div class="stat-item reveal reveal-delay-2"><div class="num"><span class="counter" data-target="24">0</span><span class="suffix">/7</span></div><div class="label">Wsparcie techniczne</div></div>
-        </div>
+        <div class="hero-stats" id="heroStats"></div>
     </div>
 </section>
 
@@ -1209,65 +1205,7 @@
         <h2 class="section-title reveal">Tworzymy strony, które <span class="gradient">przynoszą klientów</span></h2>
         <p class="section-sub reveal reveal-delay-1">Nie budujemy szablonów. Każdą stronę dopasowujemy do Twojej branży, procesu i budżetu — od prostej wizytówki po pełny system rezerwacji z AI.</p>
     </div>
-    <div class="services-grid">
-        <div class="service-card reveal" data-tilt>
-            <div class="service-icon">🌐</div>
-            <h3>Strona wizytówka + CMS</h3>
-            <p>Profesjonalna strona z panelem zarządzania treścią (Decap CMS). Edytujesz teksty i zdjęcia samodzielnie — bez programisty.</p>
-            <ul>
-                <li>Responsywny design mobile-first</li>
-                <li>Decap CMS — edytuj treści sam</li>
-                <li>SEO + JSON-LD structured data</li>
-                <li>Google Analytics + Consent Mode</li>
-                <li>Cookie consent RODO</li>
-                <li>Szybki hosting GitHub Pages</li>
-            </ul>
-            <div class="service-price">
-                <div class="amount">od 1 999 zł</div>
-                <div class="period">netto + 99 zł/mc utrzymanie</div>
-                <div class="note">domena + hosting w cenie</div>
-            </div>
-            <a href="#kontakt" class="btn-primary">Zamów wycenę</a>
-        </div>
-        <div class="service-card featured reveal reveal-delay-1" data-tilt>
-            <div class="service-icon">🏡</div>
-            <h3>Strona + Rezerwacje + AI</h3>
-            <p>Pełny pakiet dla apartamentów, salonów i usług. System rezerwacji online, automatyczne SMS z potwierdzeniem i AI chatbot na stronie.</p>
-            <ul>
-                <li>Wszystko z pakietu podstawowego</li>
-                <li>Booking engine (Hotres)</li>
-                <li>Automatyczne SMS z kodami</li>
-                <li>AI chatbot na stronie 24/7</li>
-                <li>Kalendarz dostępności online</li>
-                <li>Integracja Booking / Airbnb</li>
-            </ul>
-            <div class="service-price">
-                <div class="amount">od 3 999 zł</div>
-                <div class="period">netto + 149 zł/mc utrzymanie</div>
-                <div class="note">Hotres we własnym zakresie</div>
-            </div>
-            <a href="#kontakt" class="btn-primary">Zamów wycenę</a>
-        </div>
-        <div class="service-card reveal reveal-delay-2" data-tilt>
-            <div class="service-icon">📈</div>
-            <h3>Strona + AI + Kampanie</h3>
-            <p>Kompleksowa obsługa: strona + voicebot AI + kampanie Meta/Google/TikTok. Leady z reklamy są automatycznie obsługiwane przez AI.</p>
-            <ul>
-                <li>Wszystko z pakietu Standard</li>
-                <li>Voicebot AI (oddzwanianie)</li>
-                <li>Kampanie Meta / Google / TikTok</li>
-                <li>AI follow-up + kwalifikacja</li>
-                <li>Raporty: leady, koszty, wizyty</li>
-                <li>Dedykowany opiekun</li>
-            </ul>
-            <div class="service-price">
-                <div class="amount">od 5 999 zł</div>
-                <div class="period">netto + 299 zł/mc + budżet</div>
-                <div class="note">wycena indywidualna po briefie</div>
-            </div>
-            <a href="#kontakt" class="btn-primary">Zamów wycenę</a>
-        </div>
-    </div>
+    <div class="services-grid" id="servicesGrid"></div>
 </section>
 
 <!-- PROCESS -->
@@ -1277,12 +1215,7 @@
         <h2 class="section-title reveal">Jak <span class="gradient">działamy</span></h2>
         <p class="section-sub reveal reveal-delay-1">Od pierwszej rozmowy do gotowej strony — stawiamy na transparentność i szybkie wdrożenie.</p>
     </div>
-    <div class="process-grid">
-        <div class="process-step reveal"><div class="step-num">1</div><h4>Rozeznanie potrzeb</h4><p>Słuchamy. Poznajemy Twój biznes, konkurencję i cel strony.</p></div>
-        <div class="process-step reveal reveal-delay-1"><div class="step-num">2</div><h4>Projekt i akceptacja</h4><p>Przygotowujemy projekt. Akceptujesz wygląd zanim napiszemy kod.</p></div>
-        <div class="process-step reveal reveal-delay-2"><div class="step-num">3</div><h4>Budowa i wdrożenie</h4><p>Kodujemy, podpinamy CMS, dodajemy integracje. Testujemy.</p></div>
-        <div class="process-step reveal reveal-delay-3"><div class="step-num">4</div><h4>Szkolenie i wsparcie</h4><p>Uczymy Cię CMS. Potem hosting, backupy i wsparcie techniczne.</p></div>
-    </div>
+    <div class="process-grid" id="processGrid"></div>
 </section>
 
 <!-- PORTFOLIO -->
@@ -1332,14 +1265,7 @@
         <h2 class="section-title reveal">Polska firma. <span class="gradient">Polskie realia.</span></h2>
         <p class="section-sub reveal reveal-delay-1">Jesteśmy z Torunia — rozumiemy rynek i potrzeby lokalnych firm. Stawiamy na konkret, a nie obietnice bez pokrycia.</p>
     </div>
-    <div class="why-grid">
-        <div class="why-card reveal"><div class="icon">🎯</div><h4>Konkretny zakres</h4><p>Mówimy ile kosztuje, co dostajesz i kiedy będzie gotowe. Zero magicznego "SEO za 5 zł".</p></div>
-        <div class="why-card reveal reveal-delay-1"><div class="icon">🧩</div><h4>Nowoczesne technologie</h4><p>GitHub Pages, Decap CMS, Google Consent Mode, JSON-LD — sprawdzone i szybkie rozwiązania.</p></div>
-        <div class="why-card reveal reveal-delay-2"><div class="icon">🤝</div><h4>Wsparcie po wdrożeniu</h4><p>Hosting, aktualizacje, backup i pomoc techniczna w abonamencie. Nie znikamy po oddaniu strony.</p></div>
-        <div class="why-card reveal reveal-delay-3"><div class="icon">💰</div><h4>Bez ukrytych kosztów</h4><p>Znana cena z góry. Bez prowizji od rezerwacji, bez opłat dodatkowych.</p></div>
-        <div class="why-card reveal reveal-delay-4"><div class="icon">⚡</div><h4>Szybkie wdrożenie</h4><p>Prosta strona w 5-7 dni. Strona z CMS w 2-3 tygodnie. Bez przeciągania.</p></div>
-        <div class="why-card reveal" style="transition-delay:0.5s;"><div class="icon">📊</div><h4>Mierzalne efekty</h4><p>Google Analytics, raporty, dane. Nie "zasięgi" — pokazujemy liczby i konwersje.</p></div>
-    </div>
+    <div class="why-grid" id="whyGrid"></div>
 </section>
 
 <!-- PRICING -->
@@ -1421,13 +1347,7 @@
         <h2 class="section-title reveal">Najczęściej <span class="gradient">zadawane pytania</span></h2>
         <p class="section-sub reveal reveal-delay-1">Odpowiedzi na pytania, które zadają wszyscy przed zamówieniem strony.</p>
     </div>
-    <div class="faq-list">
-        <div class="faq-item open"><div class="faq-question" onclick="toggleFaq(this)">Ile kosztuje strona internetowa?<span class="arrow">▼</span></div><div class="faq-answer">Zaczynamy od <strong>1 999 zł netto</strong> za prostą stronę wizytówkę z CMS. Większy projekt z rezerwacjami i AI chatbotem to koszt od 3 999 zł. Każdy projekt wyceniamy indywidualnie po krótkim briefie.</div></div>
-        <div class="faq-item"><div class="faq-question" onclick="toggleFaq(this)">Czy mogę sam edytować treści?<span class="arrow">▼</span></div><div class="faq-answer">Tak. Każda strona ma wbudowany <strong>Decap CMS</strong> — panel, w którym zmienisz teksty, zdjęcia i opinie bez wiedzy technicznej. Szybsze i bezpieczniejsze niż WordPress.</div></div>
-        <div class="faq-item"><div class="faq-question" onclick="toggleFaq(this)">Czy mogę później rozbudować stronę?<span class="arrow">▼</span></div><div class="faq-answer">Oczywiście. Zaczynasz od podstaw, a potem dodajemy: rezerwacje, AI chatbota, voicebot, kampanie — wszystko na już działającej stronie.</div></div>
-        <div class="faq-item"><div class="faq-question" onclick="toggleFaq(this)">Czy strona będzie działać na telefonie?<span class="arrow">▼</span></div><div class="faq-answer">Tak — każdą stronę budujemy <strong>mobile-first</strong>. Ponad 70% użytkowników przegląda strony na telefonie — nie ma drugiej szansy na pierwsze wrażenie.</div></div>
-        <div class="faq-item"><div class="faq-question" onclick="toggleFaq(this)">Jak wygląda wsparcie po wdrożeniu?<span class="arrow">▼</span></div><div class="faq-answer">W abonamencie dostajesz: hosting, domenę, backup, aktualizacje CMS i wsparcie techniczne. Nie znikamy po oddaniu strony.</div></div>
-    </div>
+    <div class="faq-list" id="faqList"></div>
 </section>
 
 <!-- CONTACT -->
@@ -1438,13 +1358,13 @@
         <p class="section-sub reveal reveal-delay-1">Zostaw kontakt, a oddzwonimy w ciągu jednego dnia roboczego. Bez zobowiązań.</p>
     </div>
     <div class="contact-grid">
-        <div class="contact-info reveal">
-            <h3>F&amp;O Design</h3>
-            <p>Jesteśmy z Torunia — projektujemy strony dla firm, które potrzebują profesjonalnej obecności w sieci bez przepłacania. Stawiamy na sprawdzone technologie i konkretne efekty.</p>
-            <div class="contact-detail"><div class="icon">📍</div><div><div class="label">Lokalizacja</div><div class="value">Toruń / Online (cała Polska)</div></div></div>
-            <div class="contact-detail"><div class="icon">📧</div><div><div class="label">Email</div><div class="value">kontakt@fodesign.pl</div></div></div>
-            <div class="contact-detail"><div class="icon">📱</div><div><div class="label">Telefon</div><div class="value">+48 XXX XXX XXX</div></div></div>
-            <div class="contact-detail"><div class="icon">⚡</div><div><div class="label">Czas odpowiedzi</div><div class="value">do 24h (zwykle szybciej)</div></div></div>
+        <div class="contact-info reveal" id="contactInfo">
+        <h3>F&amp;O Design</h3>
+        <p>Jesteśmy z Torunia — projektujemy strony dla firm, które potrzebują profesjonalnej obecności w sieci bez przepłacania. Stawiamy na sprawdzone technologie i konkretne efekty.</p>
+        <div class="contact-detail"><div class="icon">📍</div><div><div class="label">Lokalizacja</div><div class="value" id="contactLocation">Toruń / Online (cała Polska)</div></div></div>
+        <div class="contact-detail"><div class="icon">📧</div><div><div class="label">Email</div><div class="value" id="contactEmail">kontakt@fodesign.pl</div></div></div>
+        <div class="contact-detail"><div class="icon">📱</div><div><div class="label">Telefon</div><div class="value" id="contactPhone">+48 XXX XXX XXX</div></div></div>
+        <div class="contact-detail"><div class="icon">⚡</div><div><div class="label">Czas odpowiedzi</div><div class="value" id="contactResponse">do 24h (zwykle szybciej)</div></div></div>
         </div>
         <form class="contact-form reveal reveal-delay-1" id="contactForm" onsubmit="submitForm(event)">
             <div class="form-row">
@@ -1618,22 +1538,6 @@ document.addEventListener('DOMContentLoaded',()=>{
     document.querySelectorAll('.reveal').forEach(el=>observer.observe(el));
 });
 
-// ===== TILT EFFECT ON SERVICE CARDS =====
-document.querySelectorAll('[data-tilt]').forEach(card=>{
-    card.addEventListener('mousemove',e=>{
-        const rect=card.getBoundingClientRect();
-        const x=e.clientX-rect.left;
-        const y=e.clientY-rect.top;
-        const centerX=rect.width/2;
-        const centerY=rect.height/2;
-        const rotateX=((y-centerY)/centerY)*-8;
-        const rotateY=((x-centerX)/centerX)*8;
-        card.style.transform=`perspective(1000px) rotateX(${rotateX}deg) rotateY(${rotateY}deg) translateY(-8px)`;
-    });
-    card.addEventListener('mouseleave',()=>{
-        card.style.transform='perspective(1000px) rotateX(0) rotateY(0) translateY(0)';
-    });
-});
 
 // ===== PRICING TOGGLE =====
 let isYearly=false;
@@ -1663,7 +1567,7 @@ function toggleFaq(el){
 }
 
 // ===== TYPEWRITER =====
-const phrases=['strony internetowe','systemy rezerwacji','AI chatboty','voiceboty','strony z CMS','kompleksowe kampanie'];
+let phrases=['strony internetowe','systemy rezerwacji','AI chatboty','voiceboty','strony z CMS','kompleksowe kampanie'];
 let phraseIndex=0;
 let charIndex=0;
 let isDeleting=false;
@@ -1692,33 +1596,141 @@ function typeEffect(){
 }
 document.addEventListener('DOMContentLoaded',typeEffect);
 
-// ===== PORTFOLIO LOADER =====
-async function loadPortfolio(){
+// ===== DATA LOADER =====
+async function loadData(){
     try{
-        const res=await fetch('data/portfolio.json');
-        const data=await res.json();
-        const grid=document.getElementById('portfolioGrid');
-        if(!grid||!data.projects||!data.projects.length) return;
-        grid.innerHTML=data.projects.map((p,i)=>{
-            const delay=i>0?` reveal-delay-${Math.min(i,4)}`:'';
-            const click=p.url?` onclick="window.open('${p.url}','_blank')"`:'';
-            return `<div class="portfolio-card reveal${delay}"${click}>
-                <div class="img-wrap">
-                    <img src="${p.image}" alt="${p.name}" loading="lazy">
-                </div>
-                <div class="portfolio-card-body">
-                    <span class="tag">${p.tag||''}</span>
-                    <h3>${p.name}</h3>
-                    <p>${p.desc||''}</p>
-                </div>
-                ${p.url?'<div class="hover-link">→</div>':''}
-            </div>`;
-        }).join('');
-        // Re-observe new cards
-        document.querySelectorAll('#portfolioGrid .reveal').forEach(el=>observer.observe(el));
+        // Load settings
+        const sRes=await fetch('data/settings.json');
+        const s=await sRes.json();
+        
+        // Hero badge
+        const badgeEl=document.querySelector('.hero-badge');
+        if(badgeEl&&s.hero?.badge) badgeEl.innerHTML='<span class="dot"></span> '+s.hero.badge;
+        
+        // Typewriter phrases
+        if(s.hero?.typewriterPhrases) phrases=s.hero.typewriterPhrases;
+        
+        // Stats
+        const statsEl=document.getElementById('heroStats');
+        if(statsEl&&s.stats){
+            statsEl.innerHTML=s.stats.map((st,i)=>{
+                const delay=i>0?` reveal-delay-${i}`:'';
+                return `<div class="stat-item reveal${delay}"><div class="num"><span class="counter" data-target="${st.number}">0</span><span class="suffix">${st.suffix||''}</span></div><div class="label">${st.label||''}</div></div>`;
+            }).join('');
+            document.querySelectorAll('#heroStats .reveal').forEach(el=>observer.observe(el));
+        }
+        
+        // Process
+        const procEl=document.getElementById('processGrid');
+        if(procEl&&s.process){
+            procEl.innerHTML=s.process.map((p,i)=>{
+                const delay=i>0?` reveal-delay-${i}`:'';
+                return `<div class="process-step reveal${delay}"><div class="step-num">${i+1}</div><h4>${p.title}</h4><p>${p.desc}</p></div>`;
+            }).join('');
+            document.querySelectorAll('#processGrid .reveal').forEach(el=>observer.observe(el));
+        }
+        
+        // Why Us
+        const whyEl=document.getElementById('whyGrid');
+        if(whyEl&&s.whyUs){
+            whyEl.innerHTML=s.whyUs.map((w,i)=>{
+                const delay=i>0?` reveal-delay-${i}`:'';
+                return `<div class="why-card reveal${delay}"><div class="icon">${w.icon}</div><h4>${w.title}</h4><p>${w.desc}</p></div>`;
+            }).join('');
+            document.querySelectorAll('#whyGrid .reveal').forEach(el=>observer.observe(el));
+        }
+        
+        // Contact
+        if(s.contact){
+            const m = document.getElementById('contactEmail');
+            const p = document.getElementById('contactPhone');
+            const l = document.getElementById('contactLocation');
+            const r = document.getElementById('contactResponse');
+            if(m) m.textContent=s.contact.email||m.textContent;
+            if(p) p.textContent=s.contact.phone||p.textContent;
+            if(l) l.textContent=s.contact.location||l.textContent;
+            if(r) r.textContent=s.contact.responseTime||r.textContent;
+        }
+    }catch(e){console.log('Settings load skipped:',e.message);}
+    
+    // Load services
+    try{
+        const svRes=await fetch('data/services.json');
+        const sv=await svRes.json();
+        const grid=document.getElementById('servicesGrid');
+        if(grid&&sv.length){
+            grid.innerHTML=sv.map((card,i)=>{
+                const delay=i>0?` reveal-delay-${Math.min(i,4)}`:'';
+                const feat=card.featured?' featured':'';
+                const tilt=card.featured?' data-tilt':' data-tilt';
+                return `<div class="service-card${feat} reveal${delay}"${tilt}>
+                    <div class="service-icon">${card.icon}</div>
+                    <h3>${card.name}</h3>
+                    <p>${card.desc}</p>
+                    <ul>${card.features.map(f=>`<li>${f}</li>`).join('')}</ul>
+                    <div class="service-price">
+                        <div class="amount">${card.price}</div>
+                        <div class="period">${card.priceSub}</div>
+                        <div class="note">${card.priceNote||''}</div>
+                    </div>
+                    <a href="#kontakt" class="btn-primary">Zamów wycenę</a>
+                </div>`;
+            }).join('');
+            document.querySelectorAll('#servicesGrid .reveal').forEach(el=>observer.observe(el));
+            // Re-apply tilt
+            document.querySelectorAll('#servicesGrid [data-tilt]').forEach(card=>{
+                card.addEventListener('mousemove',e=>{
+                    const rect=card.getBoundingClientRect();
+                    const x=e.clientX-rect.left;
+                    const y=e.clientY-rect.top;
+                    const cx=rect.width/2,cy=rect.height/2;
+                    card.style.transform=`perspective(1000px) rotateX(${((y-cy)/cy)*-8}deg) rotateY(${((x-cx)/cx)*8}deg) translateY(-8px)`;
+                });
+                card.addEventListener('mouseleave',()=>{
+                    card.style.transform='perspective(1000px) rotateX(0) rotateY(0) translateY(0)';
+                });
+            });
+        }
+    }catch(e){console.log('Services load skipped:',e.message);}
+    
+    // Load FAQ
+    try{
+        const fRes=await fetch('data/faq.json');
+        const f=await fRes.json();
+        const fl=document.getElementById('faqList');
+        if(fl&&f.length){
+            fl.innerHTML=f.map((item,i)=>{
+                const open=i===0?' open':'';
+                const q=item.question.replace(/'/g,"&#39;");
+                return `<div class="faq-item${open}"><div class="faq-question" onclick="toggleFaq(this)">${q}<span class="arrow">▼</span></div><div class="faq-answer">${item.answer}</div></div>`;
+            }).join('');
+        }
+    }catch(e){console.log('FAQ load skipped:',e.message);}
+    
+    // Load portfolio
+    try{
+        const pRes=await fetch('data/portfolio.json');
+        const p=await pRes.json();
+        const pg=document.getElementById('portfolioGrid');
+        if(pg&&p.projects&&p.projects.length){
+            pg.innerHTML=p.projects.map((proj,i)=>{
+                const delay=i>0?` reveal-delay-${Math.min(i,4)}`:'';
+                const click=proj.url?` onclick="window.open('${proj.url}','_blank')"`:'';
+                return `<div class="portfolio-card reveal${delay}"${click}>
+                    <div class="img-wrap"><img src="${proj.image}" alt="${proj.name}" loading="lazy"></div>
+                    <div class="portfolio-card-body">
+                        <span class="tag">${proj.tag||''}</span>
+                        <h3>${proj.name}</h3>
+                        <p>${proj.desc||''}</p>
+                    </div>
+                    ${proj.url?'<div class="hover-link">→</div>':''}
+                </div>`;
+            }).join('');
+            document.querySelectorAll('#portfolioGrid .reveal').forEach(el=>observer.observe(el));
+        }
     }catch(e){console.log('Portfolio load skipped:',e.message);}
 }
-document.addEventListener('DOMContentLoaded',loadPortfolio);
+document.addEventListener('DOMContentLoaded',loadData);
 
 // ===== CONTACT FORM =====
 function submitForm(e){
