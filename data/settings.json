@@ -1,26 +1,81 @@
 {
   "hero": {
-    "badge": "Polski zespół — Toruń",
-    "typewriterPhrases": ["strony internetowe","systemy rezerwacji","AI chatboty","voiceboty","strony z CMS","kompleksowe kampanie"]
+    "badge": "Polski zespół — Warszawa",
+    "typewriterPhrases": [
+      "strony internetowe",
+      "systemy rezerwacji",
+      "AI chatboty",
+      "voiceboty",
+      "strony z CMS",
+      "kompleksowe kampanie"
+    ]
   },
   "stats": [
-    {"number": 3, "suffix": "+", "label": "Zrealizowanych stron"},
-    {"number": 100, "suffix": "%", "label": "Oddanych w terminie"},
-    {"number": 24, "suffix": "/7", "label": "Wsparcie techniczne"}
+    {
+      "number": 3,
+      "suffix": "+",
+      "label": "Zrealizowanych stron"
+    },
+    {
+      "number": 100,
+      "suffix": "%",
+      "label": "Oddanych w terminie"
+    },
+    {
+      "number": 24,
+      "suffix": "/7",
+      "label": "Wsparcie techniczne"
+    }
   ],
   "process": [
-    {"title": "Rozeznanie potrzeb", "desc": "Słuchamy. Poznajemy Twój biznes, konkurencję i cel strony."},
-    {"title": "Projekt i akceptacja", "desc": "Przygotowujemy projekt. Akceptujesz wygląd zanim napiszemy kod."},
-    {"title": "Budowa i wdrożenie", "desc": "Kodujemy, podpinamy CMS, dodajemy integracje. Testujemy."},
-    {"title": "Szkolenie i wsparcie", "desc": "Uczymy Cię CMS. Potem hosting, backupy i wsparcie techniczne."}
+    {
+      "title": "Rozeznanie potrzeb",
+      "desc": "Słuchamy. Poznajemy Twój biznes, konkurencję i cel strony."
+    },
+    {
+      "title": "Projekt i akceptacja",
+      "desc": "Przygotowujemy projekt. Akceptujesz wygląd zanim napiszemy kod."
+    },
+    {
+      "title": "Budowa i wdrożenie",
+      "desc": "Kodujemy, podpinamy CMS, dodajemy integracje. Testujemy."
+    },
+    {
+      "title": "Szkolenie i wsparcie",
+      "desc": "Uczymy Cię CMS. Potem hosting, backupy i wsparcie techniczne."
+    }
   ],
   "whyUs": [
-    {"icon": "🎯", "title": "Konkretny zakres", "desc": "Mówimy ile kosztuje, co dostajesz i kiedy będzie gotowe. Zero magicznego SEO za 5 zł."},
-    {"icon": "🧩", "title": "Nowoczesne technologie", "desc": "GitHub Pages, Decap CMS, Google Consent Mode, JSON-LD — sprawdzone i szybkie rozwiązania."},
-    {"icon": "🤝", "title": "Wsparcie po wdrożeniu", "desc": "Hosting, aktualizacje, backup i pomoc techniczna w abonamencie. Nie znikamy po oddaniu strony."},
-    {"icon": "💰", "title": "Bez ukrytych kosztów", "desc": "Znana cena z góry. Bez prowizji od rezerwacji, bez opłat dodatkowych."},
-    {"icon": "⚡", "title": "Szybkie wdrożenie", "desc": "Prosta strona w 5-7 dni. Strona z CMS w 2-3 tygodnie. Bez przeciągania."},
-    {"icon": "📊", "title": "Mierzalne efekty", "desc": "Google Analytics, raporty, dane. Nie zasięgi — pokazujemy liczby i konwersje."}
+    {
+      "icon": "🎯",
+      "title": "Konkretny zakres",
+      "desc": "Mówimy ile kosztuje, co dostajesz i kiedy będzie gotowe. Zero magicznego SEO za 5 zł."
+    },
+    {
+      "icon": "🧩",
+      "title": "Nowoczesne technologie",
+      "desc": "GitHub Pages, Decap CMS, Google Consent Mode, JSON-LD — sprawdzone i szybkie rozwiązania."
+    },
+    {
+      "icon": "🤝",
+      "title": "Wsparcie po wdrożeniu",
+      "desc": "Hosting, aktualizacje, backup i pomoc techniczna w abonamencie. Nie znikamy po oddaniu strony."
+    },
+    {
+      "icon": "💰",
+      "title": "Bez ukrytych kosztów",
+      "desc": "Znana cena z góry. Bez prowizji od rezerwacji, bez opłat dodatkowych."
+    },
+    {
+      "icon": "⚡",
+      "title": "Szybkie wdrożenie",
+      "desc": "Prosta strona w 5-7 dni. Strona z CMS w 2-3 tygodnie. Bez przeciągania."
+    },
+    {
+      "icon": "📊",
+      "title": "Mierzalne efekty",
+      "desc": "Google Analytics, raporty, dane. Nie zasięgi — pokazujemy liczby i konwersje."
+    }
   ],
   "contact": {
     "email": "kontakt@fodesign.pl",
