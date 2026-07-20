@@ -1,4 +1,4 @@
-[
+{"faq": [
   {
     "question": "Ile kosztuje strona internetowa?",
     "answer": "Zaczynamy od **1 999 zł netto** za prostą stronę wizytówkę z CMS. Większy projekt z rezerwacjami i AI chatbotem to koszt od 3 999 zł. Każdy projekt wyceniamy indywidualnie po krótkim briefie."
@@ -19,4 +19,4 @@
     "question": "Jak wygląda wsparcie po wdrożeniu?",
     "answer": "W abonamencie dostajesz: hosting, domenę, backup, aktualizacje CMS i wsparcie techniczne. Nie znikamy po oddaniu strony."
   }
-]
+]}

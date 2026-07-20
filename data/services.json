@@ -1,4 +1,4 @@
-[
+{"services": [
   {
     "id": "start",
     "icon": "🌐",
@@ -53,4 +53,4 @@
     "priceNote": "wycena indywidualna po briefie",
     "featured": false
   }
-]
+]}

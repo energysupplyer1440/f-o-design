@@ -1656,7 +1656,8 @@ async function loadData(){
     // Load services
     try{
         const svRes=await fetch('data/services.json');
-        const sv=await svRes.json();
+        const svData=await svRes.json();
+        const sv=svData.services||svData;
         const grid=document.getElementById('servicesGrid');
         if(grid&&sv.length){
             grid.innerHTML=sv.map((card,i)=>{
@@ -1696,7 +1697,8 @@ async function loadData(){
     // Load FAQ
     try{
         const fRes=await fetch('data/faq.json');
-        const f=await fRes.json();
+        const fData=await fRes.json();
+        const f=fData.faq||fData;
         const fl=document.getElementById('faqList');
         if(fl&&f.length){
             fl.innerHTML=f.map((item,i)=>{
