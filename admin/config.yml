@@ -1,0 +1,39 @@
+# F&O Design — Decap CMS Configuration
+# Docs: https://decapcms.org/docs/configuration-options/
+
+backend:
+  name: github
+  repo: energysupplyer1440/f-o-design
+  branch: main
+  base_url: https://decap-proxy-fixed-production.up.railway.app
+  auth_endpoint: /auth
+
+site_url: https://energysupplyer1440.github.io/f-o-design
+display_url: https://energysupplyer1440.github.io/f-o-design
+logo_url: https://feniksapartments.pl/wp-content/uploads/2023/09/cropped-cid186e0bd4d1ab4c50ac51-scaled-1-1024x654.jpeg
+
+locale: pl
+media_folder: "images"
+public_folder: "/images"
+
+collections:
+  - name: "portfolio"
+    label: "📁 Portfolio"
+    label_singular: "Projekt"
+    folder: "data/portfolio"
+    create: true
+    delete: true
+    format: "json"
+    extension: "json"
+    slug: "{{id}}"
+    identifier_field: "name"
+    summary: "{{name}} — {{tag}}"
+    sortable_fields: ["name", "date"]
+    fields:
+      - { label: "ID", name: "id", widget: "string", hint: "unikalny identyfikator, np. feniks-apartments. Bez spacji." }
+      - { label: "Nazwa projektu", name: "name", widget: "string" }
+      - { label: "Kategoria", name: "tag", widget: "string", hint: "np. Apartamenty, Restauracja, Beauty" }
+      - { label: "Opis", name: "desc", widget: "text" }
+      - { label: "URL projektu", name: "url", widget: "string", required: false, hint: "np. https://... (opcjonalnie)" }
+      - { label: "Zdjęcie główne (URL)", name: "image", widget: "image", hint: "URL zdjęcia pokazującego projekt" }
+      - { label: "Data", name: "date", widget: "datetime", default: "", required: false }
