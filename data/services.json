@@ -1,0 +1,56 @@
+[
+  {
+    "id": "start",
+    "icon": "🌐",
+    "name": "Strona wizytówka + CMS",
+    "desc": "Profesjonalna strona z panelem zarządzania treścią (Decap CMS). Edytujesz teksty i zdjęcia samodzielnie — bez programisty.",
+    "features": [
+      "Responsywny design mobile-first",
+      "Decap CMS — edytuj treści sam",
+      "SEO + JSON-LD structured data",
+      "Google Analytics + Consent Mode",
+      "Cookie consent RODO",
+      "Szybki hosting GitHub Pages"
+    ],
+    "price": "od 1 999 zł",
+    "priceSub": "netto + 99 zł/mc utrzymanie",
+    "priceNote": "domena + hosting w cenie",
+    "featured": false
+  },
+  {
+    "id": "business",
+    "icon": "🏡",
+    "name": "Strona + Rezerwacje + AI",
+    "desc": "Pełny pakiet dla apartamentów, salonów i usług. System rezerwacji online, automatyczne SMS z potwierdzeniem i AI chatbot na stronie.",
+    "features": [
+      "Wszystko z pakietu podstawowego",
+      "Booking engine (Hotres)",
+      "Automatyczne SMS z kodami",
+      "AI chatbot na stronie 24/7",
+      "Kalendarz dostępności online",
+      "Integracja Booking / Airbnb"
+    ],
+    "price": "od 3 999 zł",
+    "priceSub": "netto + 149 zł/mc utrzymanie",
+    "priceNote": "Hotres we własnym zakresie",
+    "featured": true
+  },
+  {
+    "id": "enterprise",
+    "icon": "📈",
+    "name": "Strona + AI + Kampanie",
+    "desc": "Kompleksowa obsługa: strona + voicebot AI + kampanie Meta/Google/TikTok. Leady z reklamy są automatycznie obsługiwane przez AI.",
+    "features": [
+      "Wszystko z pakietu Standard",
+      "Voicebot AI (oddzwanianie)",
+      "Kampanie Meta / Google / TikTok",
+      "AI follow-up + kwalifikacja",
+      "Raporty: leady, koszty, wizyty",
+      "Dedykowany opiekun"
+    ],
+    "price": "od 5 999 zł",
+    "priceSub": "netto + 299 zł/mc + budżet",
+    "priceNote": "wycena indywidualna po briefie",
+    "featured": false
+  }
+]
