@@ -47,6 +47,7 @@
             --surface2: #151540;
             --rose: #f43f5e;
             --rose-light: #fb7185;
+            --rose-dark: #e11d48;
             --rose-glow: rgba(244,63,94,0.15);
             --cyan: #5eead4;
             --purple: #a78bfa;
@@ -273,8 +274,8 @@
             display: inline-flex;
             align-items: center;
             gap: 0.5rem;
-            background: linear-gradient(135deg, var(--rose), var(--amber));
-            color: #0a0a1a;
+            background: linear-gradient(135deg, var(--rose), #e11d48);
+            color: white;
             padding: 0.9rem 2.2rem;
             border-radius: 12px;
             font-size: 0.95rem;
@@ -285,17 +286,19 @@
             cursor: pointer;
             position: relative;
             overflow: hidden;
+            box-shadow: 0 4px 24px rgba(244,63,94,0.35);
         }
         .btn-primary::before {
             content: '';
             position: absolute;
             top: 0; left: -100%;
             width: 100%; height: 100%;
-            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
+            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.15), transparent);
             transition: left 0.6s;
         }
         .btn-primary:hover::before { left: 100%; }
-        .btn-primary:hover { transform: translateY(-3px); box-shadow: 0 12px 40px rgba(244,63,94,0.3); }
+        .btn-primary:hover { transform: translateY(-3px); box-shadow: 0 12px 40px rgba(244,63,94,0.45); }
+
         .btn-secondary {
             display: inline-flex;
             align-items: center;
@@ -511,8 +514,8 @@
             position: absolute;
             top: 16px;
             right: 16px;
-            background: linear-gradient(135deg, var(--rose), var(--amber));
-            color: #0a0a1a;
+            background: linear-gradient(135deg, var(--rose), var(--rose-dark));
+            color: white;
             font-size: 0.65rem;
             font-weight: 700;
             text-transform: uppercase;
@@ -804,17 +807,19 @@
         .pricing-card.featured::before {
             content: 'Najczęściej wybierany';
             position: absolute;
-            top: -12px; left: 50%;
-            transform: translateX(-50%);
-            background: linear-gradient(135deg, var(--rose), var(--amber));
-            color: #0a0a1a;
-            font-size: 0.65rem;
+            top: 16px;
+            right: 16px;
+            transform: none;
+            background: linear-gradient(135deg, var(--rose), var(--rose-dark));
+            color: white;
+            font-size: 0.6rem;
             font-weight: 700;
             text-transform: uppercase;
             letter-spacing: 1.5px;
-            padding: 0.35rem 1.2rem;
+            padding: 0.35rem 1rem;
             border-radius: 50px;
             white-space: nowrap;
+            box-shadow: 0 4px 20px rgba(244,63,94,0.3);
         }
         .pricing-card h3 { font-size: 1.2rem; font-weight: 700; margin-bottom: 0.3rem; }
         .pricing-card .sub { font-size: 0.85rem; color: var(--text-muted); margin-bottom: 1.5rem; }
