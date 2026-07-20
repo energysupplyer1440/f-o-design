@@ -1292,19 +1292,11 @@
         <h2 class="section-title reveal">Nasze <span class="gradient">realizacje</span></h2>
         <p class="section-sub reveal reveal-delay-1">Zobacz strony, które zbudowaliśmy. Każda jest dopasowana do branży i potrzeb klienta.</p>
     </div>
-    <div class="portfolio-grid">
-        <div class="portfolio-card reveal" onclick="window.open('https://energysupplyer1440.github.io/feniks-cms','_blank')">
-            <div class="img-wrap">
-                <img src="https://feniksapartments.pl/wp-content/uploads/2023/09/cropped-cid186e0bd4d1ab4c50ac51-scaled-1-1024x654.jpeg" alt="Feniks Apartments" loading="lazy">
-            </div>
-            <div class="portfolio-card-body">
-                <span class="tag">🏠 Apartamenty</span>
-                <h3>Feniks Apartments</h3>
-                <p>Strona z Decap CMS dla apartamentów w Toruniu. 19 apartamentów, galeria, kalendarz dostępności, gotowa pod Hotres.</p>
-            </div>
-            <div class="hover-link">→</div>
-        </div>
-        <div class="portfolio-card reveal reveal-delay-1" style="cursor:default;">
+    <div class="portfolio-grid" id="portfolioGrid">
+        <!-- Dynamiczne karty z data/portfolio.json -->
+    </div>
+    <div class="portfolio-grid" style="margin-top:1.5rem;">
+        <div class="portfolio-card reveal" style="cursor:default;">
             <div class="img-wrap" style="background:var(--bg);display:flex;align-items:center;justify-content:center;padding:3rem;">
                 <div style="text-align:center;color:var(--text-dim);">
                     <div style="font-size:3rem;margin-bottom:0.5rem;">✨</div>
@@ -1317,7 +1309,7 @@
                 <p>Następna realizacja może być Twoja. Skontaktuj się i opowiedz o swoim projekcie.</p>
             </div>
         </div>
-        <div class="portfolio-card reveal reveal-delay-2" style="cursor:default;opacity:0.6;">
+        <div class="portfolio-card reveal reveal-delay-1" style="cursor:default;opacity:0.6;">
             <div class="img-wrap" style="background:var(--bg);display:flex;align-items:center;justify-content:center;padding:3rem;">
                 <div style="text-align:center;color:var(--text-dim);">
                     <div style="font-size:3rem;margin-bottom:0.5rem;">🚀</div>
@@ -1699,6 +1691,34 @@ function typeEffect(){
     setTimeout(typeEffect,isDeleting?40:80);
 }
 document.addEventListener('DOMContentLoaded',typeEffect);
+
+// ===== PORTFOLIO LOADER =====
+async function loadPortfolio(){
+    try{
+        const res=await fetch('data/portfolio.json');
+        const data=await res.json();
+        const grid=document.getElementById('portfolioGrid');
+        if(!grid||!data.projects||!data.projects.length) return;
+        grid.innerHTML=data.projects.map((p,i)=>{
+            const delay=i>0?` reveal-delay-${Math.min(i,4)}`:'';
+            const click=p.url?` onclick="window.open('${p.url}','_blank')"`:'';
+            return `<div class="portfolio-card reveal${delay}"${click}>
+                <div class="img-wrap">
+                    <img src="${p.image}" alt="${p.name}" loading="lazy">
+                </div>
+                <div class="portfolio-card-body">
+                    <span class="tag">${p.tag||''}</span>
+                    <h3>${p.name}</h3>
+                    <p>${p.desc||''}</p>
+                </div>
+                ${p.url?'<div class="hover-link">→</div>':''}
+            </div>`;
+        }).join('');
+        // Re-observe new cards
+        document.querySelectorAll('#portfolioGrid .reveal').forEach(el=>observer.observe(el));
+    }catch(e){console.log('Portfolio load skipped:',e.message);}
+}
+document.addEventListener('DOMContentLoaded',loadPortfolio);
 
 // ===== CONTACT FORM =====
 function submitForm(e){
