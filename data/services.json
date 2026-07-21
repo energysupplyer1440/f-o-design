@@ -2,8 +2,8 @@
   {
     "id": "start",
     "icon": "🌐",
-    "name": "Strona wizytówka + CMS",
-    "desc": "Profesjonalna strona z panelem zarządzania treścią (Decap CMS). Edytujesz teksty i zdjęcia samodzielnie — bez programisty.",
+    "name": "Strona firmowa + CMS",
+    "desc": "Nowoczesna strona dla Twojej firmy z panelem zarządzania treścią (Decap CMS). Edytujesz teksty i zdjęcia samodzielnie — idealne dla usług, handlu i małych firm.",
     "features": [
       "Responsywny design mobile-first",
       "Decap CMS — edytuj treści sam",
@@ -20,15 +20,15 @@
   {
     "id": "business",
     "icon": "🏡",
-    "name": "Strona + Rezerwacje + AI",
-    "desc": "Pełny pakiet dla apartamentów, salonów i usług. System rezerwacji online, automatyczne SMS z potwierdzeniem i AI chatbot na stronie.",
+    "name": "Apartamenty + Rezerwacje + AI",
+    "desc": "Pełny pakiet dla apartamentów, hoteli i noclegów. System rezerwacji online (Hotres), automatyczne SMS z kodami drzwi i AI chatbot odpowiadający 24/7.",
     "features": [
-      "Wszystko z pakietu podstawowego",
-      "Booking engine (Hotres)",
-      "Automatyczne SMS z kodami",
+      "Strona firmowa + CMS (wszystko z pakietu Start)",
+      "Booking engine Hotres — kalendarz online",
+      "SMS z kodem dostępu dla gości",
       "AI chatbot na stronie 24/7",
-      "Kalendarz dostępności online",
-      "Integracja Booking / Airbnb"
+      "Integracja z Booking.com / Airbnb",
+      "Automatyczne potwierdzenia rezerwacji"
     ],
     "price": "od 3 999 zł",
     "priceSub": "netto + 149 zł/mc utrzymanie",
@@ -38,15 +38,15 @@
   {
     "id": "enterprise",
     "icon": "📈",
-    "name": "Strona + AI + Kampanie",
-    "desc": "Kompleksowa obsługa: strona + voicebot AI + kampanie Meta/Google/TikTok. Leady z reklamy są automatycznie obsługiwane przez AI.",
+    "name": "Full Stack + AI + Kampanie",
+    "desc": "Kompleksowa obsługa: strona + voicebot AI + kampanie Meta/Google/TikTok. Leady z reklamy są automatycznie obsługiwane przez AI. Dla wymagających.",
     "features": [
-      "Wszystko z pakietu Standard",
-      "Voicebot AI (oddzwanianie)",
+      "Wszystko z pakietu Business",
+      "Voicebot AI (oddzwanianie do klientów)",
       "Kampanie Meta / Google / TikTok",
-      "AI follow-up + kwalifikacja",
+      "AI follow-up + kwalifikacja leadów",
       "Raporty: leady, koszty, wizyty",
-      "Dedykowany opiekun"
+      "Dedykowany opiekun projektu"
     ],
     "price": "od 5 999 zł",
     "priceSub": "netto + 299 zł/mc + budżet",
