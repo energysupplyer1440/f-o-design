@@ -1810,7 +1810,7 @@ function submitForm(e){
         method:'POST',headers:{'Content-Type':'application/json'},
         body:JSON.stringify(data)
     })
-    .then(r=>{if(r.ok){btn.textContent='✅ Wysłano!';e.target.reset();}else btn.textContent='❌ Błąd — spróbuj ponownie'})
+    .then(r=>{if(r.ok){btn.textContent='✅ Wysłano!';e.target.reset();window.dataLayer=window.dataLayer||[];window.dataLayer.push({event:'form_submit_success',form_service:document.getElementById('service').value});}else btn.textContent='❌ Błąd — spróbuj ponownie'})
     .catch(()=>btn.textContent='❌ Błąd — spróbuj ponownie')
     .finally(()=>setTimeout(()=>{btn.textContent=original;btn.disabled=false},3000));
 }
