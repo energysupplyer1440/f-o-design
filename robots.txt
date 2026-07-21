@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://energysupplyer1440.github.io/f-o-design/sitemap.xml
