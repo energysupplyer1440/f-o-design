@@ -2,8 +2,8 @@
   {
     "id": "start",
     "icon": "🌐",
-    "name": "Strona firmowa + CMS",
-    "desc": "Nowoczesna strona dla Twojej firmy z panelem zarządzania treścią (Decap CMS). Edytujesz teksty i zdjęcia samodzielnie — idealne dla usług, handlu i małych firm.",
+    "name": "Strona wizytówka + CMS",
+    "desc": "Prosta, nowoczesna strona dla Twojej firmy z panelem zarządzania treścią (Decap CMS). Edytujesz treści sam — bez programisty. Idealna na start.",
     "features": [
       "Responsywny design mobile-first",
       "Decap CMS — edytuj treści sam",
@@ -18,14 +18,32 @@
     "featured": false
   },
   {
+    "id": "medium",
+    "icon": "🏢",
+    "name": "Strona firmowa + Blog",
+    "desc": "Rozbudowana strona dla firm usługowych, które chcą budować autorytet w sieci. Więcej podstron, blog, FAQ i optymalizacja SEO pod lokalne wyszukiwanie.",
+    "features": [
+      "Wszystko z pakietu Start",
+      "Do 10 podstron (usługi, realizacje, zespół)",
+      "Blog / aktualności z CMS",
+      "FAQ schema + rozszerzone SEO",
+      "Google Business Profile konfiguracja",
+      "Optymalizacja pod lokalne wyszukiwanie"
+    ],
+    "price": "od 2 999 zł",
+    "priceSub": "netto + 119 zł/mc utrzymanie",
+    "priceNote": "domena + hosting w cenie",
+    "featured": false
+  },
+  {
     "id": "business",
     "icon": "🏡",
     "name": "Apartamenty + Rezerwacje + AI",
-    "desc": "Pełny pakiet dla apartamentów, hoteli i noclegów. System rezerwacji online (Hotres), automatyczne SMS z kodami drzwi i AI chatbot odpowiadający 24/7.",
+    "desc": "Pełny pakiet dla apartamentów, hoteli i noclegów. System rezerwacji online (Hotres), automatyczne SMS z kodami drzwi i AI chatbot 24/7.",
     "features": [
-      "Strona firmowa + CMS (wszystko z pakietu Start)",
+      "Wszystko z pakietu Firmowa",
       "Booking engine Hotres — kalendarz online",
-      "SMS z kodem dostępu dla gości",
+      "Automatyczne SMS z kodami dostępu",
       "AI chatbot na stronie 24/7",
       "Integracja z Booking.com / Airbnb",
       "Automatyczne potwierdzenia rezerwacji"
@@ -39,9 +57,9 @@
     "id": "enterprise",
     "icon": "📈",
     "name": "Full Stack + AI + Kampanie",
-    "desc": "Kompleksowa obsługa: strona + voicebot AI + kampanie Meta/Google/TikTok. Leady z reklamy są automatycznie obsługiwane przez AI. Dla wymagających.",
+    "desc": "Kompleksowa obsługa: strona + voicebot AI + kampanie Meta/Google/TikTok. Leady automatycznie obsługiwane przez AI. Dla wymagających.",
     "features": [
-      "Wszystko z pakietu Business",
+      "Wszystko z pakietu Apartamenty",
       "Voicebot AI (oddzwanianie do klientów)",
       "Kampanie Meta / Google / TikTok",
       "AI follow-up + kwalifikacja leadów",
